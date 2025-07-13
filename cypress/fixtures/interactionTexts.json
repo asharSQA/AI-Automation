@@ -1,0 +1,14 @@
+{
+  "basicGreetingText": "Hello, How May I help you?",
+  "basicSpeakingStyle": "Testing style",
+  "commonQuestionText": "Question: Where are you located?\nAnswer: We are located at 132 Linkin Park, New York.\nQuestion: How many other branches do you have?\nAnswer: We don't have any subsidiary branches.",
+  "websiteUrl": "https://example.com/",
+  "callTransferDescription": "Transfer the call to billing department when user asks for bill, refund or price of anything",
+  "callTransferEdit": "If user ask about Laptop",
+  "textScenario": "Send Text to the number when user asks for bill, refund or price of anything",
+  "textMessage": "New Message From Ai Receptionist",
+  "textNextStep": "Tell the user that he has sent a text",
+  "intakeFormQuestion1": "Which company tablet do you need?",
+  "intakeFormQuestion2": "What is your maximum budget?",
+  "customNotificationScenario": "when user tell you about his company name"
+}

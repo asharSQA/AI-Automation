@@ -1,0 +1,33 @@
+{
+  "name": "automation-testing",
+  "version": "1.0.0",
+  "description": "Automated testing framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "yarn webapp:report",
+    "webapp": "cypress run",
+    "webapp:open": "cypress open",
+    "clean:reports": "rimraf cypress/reports",
+    "generate:report": "yarn merge:reports && yarn create:html",
+    "merge:reports": "mochawesome-merge \"cypress/reports/*.json\" --output cypress/reports/merged-report.json",
+    "create:html": "marge cypress/reports/merged-report.json --reportDir cypress/reports --reportFilename index.html",
+    "webapp:report": "yarn clean:reports && yarn webapp && yarn generate:report"
+  },
+  "keywords": ["automation", "testing", "cypress"],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "cypress": "^14.2.0"
+  },
+  "devDependencies": {
+    "cypress-file-upload": "^5.0.8",
+    "cypress-wait-until": "^3.0.2",
+    "del-cli": "^6.0.0",
+    "mailosaur": "^8.8.1",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^5.0.0",
+    "mochawesome-report-generator": "^6.1.1",
+    "rimraf": "^6.0.1"
+  }
+}
